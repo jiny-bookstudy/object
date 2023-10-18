@@ -1,0 +1,20 @@
+{
+  "name": "object-books-example",
+  "version": "1.0.0",
+  "description": "chapter 1 example of ticketing app",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "author": "yondo123@google.com",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "prettier": "^3.0.2"
+  }
+}
