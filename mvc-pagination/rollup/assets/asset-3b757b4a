@@ -1,0 +1,82 @@
+:root {
+  --color-table-header: #d3d3d3;
+  --color-table-even-rows: #d3d3d3;
+  --color-active: red;
+}
+
+body {
+  padding: 50px 50px;
+  background-color: #f2f2f2;
+}
+
+#page_title {
+  margin: 20px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+}
+
+thead {
+  background-color: var(--color-table-header);
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-table-even-rows);
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.area {
+  margin: 10px 0;
+}
+
+#dropdown {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#table {
+  padding: 10px 0;
+  font-size: 1rem;
+}
+
+#pagination {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: white;
+}
+
+#pagination button {
+  margin: 0 10px;
+  font-size: 1rem;
+  font-weight: 550;
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+button.arrow {
+  color: var(--color-active);
+}
+
+button.active {
+  color: var(--color-active);
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
