@@ -10,4 +10,3 @@ export const DROPDOWN_NAME = 'item-count-dropdown';
 /** Pagination */
 export const PAGINATION_CONTAINER_ID = 'pagination';
 export const DEFAULT_PAGE_SIZE = 5;
-export const ACTIVE_PACE_CLASS = 'active';
