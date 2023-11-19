@@ -1,17 +1,11 @@
-import FetchApi from './config/FetchApi.js';
-import sliceArray from '../utils/array.js';
+import FetchController from '../controllers/FetchController.js';
 
-const requestEmployee = async (offset, limit) => {
+export const requestEmployee = async () => {
   try {
-    const employeeApi = new FetchApi('/constants/DUMMY_EMPLOYEE.json');
+    const employeeApi = new FetchController('/constants/DUMMY_EMPLOYEE.json');
     const employees = await employeeApi.get();
-    return {
-      totalCount: employees.length,
-      employees: sliceArray(employees, offset, limit)
-    };
+    return employees;
   } catch (error) {
-    console.error(error);
+    throw new Error(error);
   }
 };
-
-export default requestEmployee;
