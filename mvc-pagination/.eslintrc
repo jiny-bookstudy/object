@@ -17,6 +17,7 @@
     "class-methods-use-this": "off",
     "consistent-return": "off",
     "no-undef": "off",
+    "import/prefer-default-export": "off",
     "import/extensions": "off",
     "no-restricted-syntax": "off"
   },
